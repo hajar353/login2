@@ -1,0 +1,11 @@
+@media screen and (max-width:1200px){
+
+    .from-box{
+        padding: 10px;
+        width: 70%;
+        /* background-color: aqua; */
+       
+    }
+    
+}
+/* (min-width:500px) and */

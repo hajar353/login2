@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    background-color:rgb(255, 192, 74);
+
+    
+}
+section{
+    background-image:url("../3d-render-secure-login-password-illustration.jpg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+p,h1,h2,h3,h4,h5,h6,#welcome{
+    font-family: 'Pacifico', cursive;
+   
+}
+
+
+.from-box{
+ backdrop-filter: blur(3px);
+ border-radius:15px ;
+ color: purple;
+ font-weight: bold;
+ border: 3px solid rgb(197, 132, 197);
+ padding: 40px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ z-index: 2;
+ width: 80%;
+ -webkit-border-radius:15px ;
+ -moz-border-radius:15px ;
+ -ms-border-radius:15px ;
+ -o-border-radius:15px ;
+}
+
+input:focus{
+    border: 1px solid purple !important;
+    box-shadow:1px 2px 10px 1px purple !important;
+    /* border: none !important;
+    box-shadow: none !important;
+    outline: none !important; */
+   
+ }
+.input-field ::placeholder{
+    color: purple;
+
+}
+h1{
+   position: relative;
+   margin-bottom: 50px;
+}
+h1::after{
+   content: "";
+   width: 40px;
+   height: 3px;
+   border-radius: 2px;
+   background-color: purple;
+   position: absolute;
+   bottom: -15px;
+   left: 50%;
+   transform:translateX(-50%) ;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   -ms-border-radius: 2px;
+   -o-border-radius: 2px;
+   -webkit-transform:translateX(-50%) ;
+   -moz-transform:translateX(-50%) ;
+   -ms-transform:translateX(-50%) ;
+   -o-transform:translateX(-50%) ;
+}
+.input-group a{
+    text-decoration: none;
+    color: purple;
+font-family: monospace;
+}
+.input-group p{
+ 
+    color: orange;
+font-family: monospace;
+}
+.btn-field{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   margin: auto;
+
+}
+.btn-field button{
+  padding: 5px 30px;
+
+    background-color: purple;
+    color: white;
+    font-family:'Pacifico', cursive ;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    
+}
+.btn-field button.change-color{
+    background-color: rgb(233, 172, 58);
+}
+
+.input-field{
+    max-height: 65px;
+    transition: max-height 0.5s;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    -ms-transition: max-height 0.5s;
+    -o-transition: max-height 0.5s;
+   
+
+}
+.from-box #logOut{
+    padding: 5px 30px;
+
+    background-color: orange;
+    color: white;
+    font-family:'Pacifico', cursive ;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+
+}
+
+

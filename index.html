@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./login.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <section>
+
+        
+            <div class="from-box ">
+                <h1 id="title" class="text-center ">Sign Up</h1>
+                <div id="welcome" class="text-center h1"></div>
+<div class="message text-center"></div>
+                <form id="form" class="p-3 ">
+
+                    <div class="input-group">
+                        <div id="inputName" class="input-field w-100 ">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="name" type="text" placeholder="Name" class="form-control">
+                        </div>
+
+                        <div class="input-field w-100 mt-3">
+                            <i class="fa-solid fa-envelope "></i>
+                            <input id="email" type="email" placeholder="Email" class="form-control">
+                        </div>
+
+                        <div class="input-field w-100 mt-3">
+                            <i class="fa-solid fa-lock "></i>
+                            <input id="password" type="password" placeholder="password" class="form-control">
+                        </div>
+
+                    </div>
+
+                    <div class="btn-field mt-5">
+                        <button id="signupBtn" onclick="signUpBtn()" type="button" class="mt-2">Sign Up</button>
+                        <button  id="signinBtn" onclick="signInBtn()" class="change-color mt-2" type="button">Sign In</button>
+                        <button id="signinHome" onclick="signInHome()" class=" mt-2 d-none" type="button">Home</button>
+                       
+
+                    </div>
+                </form>
+                <button id="logOut" onclick="LogOut()" class="d-none">Log out</button>
+            </div>
+     
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
