@@ -16,7 +16,8 @@ var inputpassword=document.getElementById('password');
 var outbut=[]
 if (localStorage.getItem('outbut') != null) {
     outbut = JSON.parse(localStorage.getItem('outbut'));
-  }
+}
+
 
 function signInBtn(){
    
@@ -44,7 +45,8 @@ function signUpBtn(){
                 password:inputpassword.value
             }
             outbut.push(inputValues);
-            localStorage.setItem("outbut", JSON.stringify(outbut));
+          localStorage.setItem("outbut", JSON.stringify(outbut));
+       
            
     document.querySelector('.message').innerHTML='Success'
     clearInputs()
@@ -91,41 +93,28 @@ function check() {
 }
 
 
-var users= [];
-
-users = JSON.parse(localStorage.getItem('outbut'))
-
 
 function signInHome(){
-    
-//   title.classList.add('d-none')
-//     form.classList.add('d-none');
-// logOut.classList.remove('d-none');
+
 
 
 var email = inputemail.value
 var password = inputpassword.value
 
-for (var i = 0; i < users.length; i++) {
+for (var i = 0; i < outbut.length; i++) {
 
-    if (users[i].email == email && users[i].password == password) {
+    if (outbut[i].email == email && outbut[i].password == password) {
         document.querySelector('#welcome').classList.remove('d-none');
-        document.querySelector('#welcome').innerHTML= `welcome ${users[i].name}`
+        document.querySelector('#welcome').innerHTML= `welcome ${outbut[i].name}`
           title.classList.add('d-none')
     form.classList.add('d-none');
 logOut.classList.remove('d-none');
         
     }
-    //    else{
-    //     // form.classList.remove('d-none');
-    //     // logOut.classList.add('d-none')
-    // }
-
-  
-}
  
+}
 
-
+ 
 }
 
 
